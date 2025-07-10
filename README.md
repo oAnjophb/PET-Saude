@@ -25,7 +25,6 @@ Esta landing page apresenta o projeto “Informação para Ação: Desenvolvimen
 
 ## Considerações e Pontos de Melhoria
 
-<<<<<<< HEAD
 - O projeto priorizou um layout limpo, responsivo e sem dependências externas.
 - O design utiliza cores e fontes relacionadas à área da saúde e tecnologia.
 - O logotipo atual é um placeholder, pronto para ser substituído.
