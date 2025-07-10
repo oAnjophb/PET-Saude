@@ -22,19 +22,3 @@ Esta landing page apresenta o projeto “Informação para Ação: Desenvolvimen
    cd PET-Saude
    ```
 3. Abra o arquivo `index.html` no navegador.
-
-## Considerações e Pontos de Melhoria
-
-- O projeto priorizou um layout limpo, responsivo e sem dependências externas.
-- O design utiliza cores e fontes relacionadas à área da saúde e tecnologia.
-- O logotipo atual é um placeholder, pronto para ser substituído.
-- Pontos de melhoria:
-  - Adicionar animações leves ou ícones personalizados.
-  - Implementar um formulário de contato funcional.
-  - Ampliar opções de acessibilidade.
-- O prazo foi seguido rigorosamente, e eventuais incrementos podem ser feitos futuramente.
-=======
-- O foco foi atender a todos os requisitos da banca com um layout limpo, responsivo e sem dependências externas.
-- O design usa cores e fontes que remetem à área da saúde e tecnologia.
-- O logotipo é um placeholder, podendo ser substituído facilmente.
-- Possíveis melhorias: adicionar animações leves, imagens ou ícones personalizados, formulário de contato funcional e mais opções de acessibilidade.
