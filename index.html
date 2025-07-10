@@ -7,94 +7,87 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
-      </nav>
+    <header class="header fade-in">
       <div class="header-overlay"></div>
       <div class="header-content">
-        <div class="logo">
+        <div class="logo fade-in">
           <img src="./components/images/Logo2a.png" alt="Logo PET-Saúde" />
         </div>
-        <h1 class="header-title">
+        <h1 class="header-title fade-in">
           Informação para Ação: Desenvolvimento e implantação de soluções digitais para otimizar a comunicação e gestão da Atenção Primária à Saúde
         </h1>
-        <ul>
-          <li><a href="#sobre">SOBRE NÓS</a></li>
-          <li><a href="#como-atuamos">COMO ATUAMOS</a></li>
-          <li><a href="#beneficios">BENEFÍCIOS</a></li>
-          <li><a href="#cursos">COLABORAÇÃO</a></li>
-          <li><a href="#contato">CONTATO</a></li>
-        </ul>
+        <nav class="nav-container fade-in">
+          <button class="menu-icon" aria-label="Abrir Menu" aria-expanded="false" aria-controls="nav-list">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-list">
+            <li><a href="#sobre">SOBRE NÓS</a></li>
+            <li><a href="#problema">PROBLEMA</a></li>
+            <li><a href="#como-atuamos">COMO ATUAMOS</a></li>
+            <li><a href="#beneficios">BENEFÍCIOS</a></li>
+            <li><a href="#colaboracao">COLABORAÇÃO MULTIDISCIPLINAR</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <section id="sobre" class="sobre-section">
-        <div class="sobre-content">
-          <h2>SOBRE O PROJETO</h2>
-          <p>
-            O projeto PET-Saúde "Informação para Ação" tem como objetivo auxiliar na comunicação entre as Unidades Básicas de Saúde e a população do município de Parnaíba-PI, gerenciar dados gerados nos atendimentos do SUS e otimizar a análise da situação de saúde local.
-          </p>
-          <div class="problema">
-            <h3>Problema</h3>
+      <div class="container-grid" id="containerGrid">
+        <section id="sobre" class="container card" data-info="sobre">
+          <div class="container-content">
+            <h2>SOBRE O PROJETO</h2>
+            <p>
+              O projeto PET-Saúde "Informação para Ação" tem como objetivo auxiliar na comunicação entre as Unidades Básicas de Saúde e a população do município de Parnaíba-PI, gerenciar dados gerados nos atendimentos do SUS e otimizar a análise da situação de saúde local.
+            </p>
+          </div>
+        </section>
+        <section id="problema" class="container card" data-info="problema">
+          <div class="container-content">
+            <h2>PROBLEMA</h2>
             <p>
               A fragmentação informacional dificulta a comunicação eficiente e a gestão de dados em saúde. Existe a necessidade de superar esses desafios para melhorar a tomada de decisão, a prevenção e o cuidado na Atenção Primária.
             </p>
           </div>
-        </div>
-      </section>
-
-      <!-- <section id="como-atuamos" class="section">
-        <h2>Como Atuamos</h2>
-        <ul>
-          <li>
-            <strong>Plataforma Digital:</strong> Desenvolvimento e implementação de soluções digitais para integração e otimização das informações.
-          </li>
-          <li>
-            <strong>Integração de Dados:</strong> Uso de informações das notificações (SINAN), doenças crônicas (e-SUS), situação vacinal e atendimentos na atenção primária.
-          </li>
-          <li>
-            <strong>Dashboards Interativos:</strong> Visualização de indicadores-chave, gráficos dinâmicos e mapas de distribuição.
-          </li>
-          <li>
-            <strong>Educação em Saúde:</strong> Compartilhamento de materiais digitais educativos e ações de educação para profissionais e comunidade.
-          </li>
-        </ul>
-      </section>
-
-      <section id="beneficios" class="section">
-        <h2>Benefícios para a Comunidade</h2>
-        <ul>
-          <li>
-            Fortalecimento da vigilância em saúde e aprimoramento das ações de prevenção e controle.
-          </li>
-          <li>
-            Democratização do conhecimento em saúde, promovendo acesso à informação de forma clara e acessível.
-          </li>
-          <li>
-            Aprimoramento das ações dos profissionais de saúde, melhorando a qualidade do atendimento.
-          </li>
-        </ul>
-      </section>
-
-      <section id="cursos" class="section">
-        <h2>Colaboração Multidisciplinar</h2>
-        <p>O projeto conta com a participação dos seguintes cursos:</p>
-        <ul>
-          <li>Bacharelado em Enfermagem</li>
-          <li>Bacharelado em Odontologia</li>
-          <li>Curso Superior de Tecnologia em Sistemas de Computação</li>
-        </ul>
-      </section>
-
-      <section id="contato" class="section contato">
-        <h2>Entre em Contato</h2>
-        <p>Realização: UESPI - Universidade Estadual do Piauí</p>
-        <p>Contato: petsaude@gmail.contato.br</p>
-      </section> -->
+        </section>
+        <section id="como-atuamos" class="container card" data-info="como-atuamos">
+          <div class="container-content">
+            <h2>COMO ATUAMOS</h2>
+            <p>
+              A equipe PET-Saúde desenvolve soluções digitais inovadoras, promovendo integração entre profissionais de saúde e comunidade, com foco na transparência e eficiência dos processos.
+            </p>
+          </div>
+        </section>
+        <section id="beneficios" class="container card" data-info="beneficios">
+          <div class="container-content">
+            <h2>BENEFÍCIOS</h2>
+            <p>
+              Melhoria na comunicação, otimização da gestão de dados, suporte à decisão clínica, maior engajamento da população e resultados positivos na saúde local.
+            </p>
+          </div>
+        </section>
+        <section id="colaboracao" class="container card" data-info="colaboracao">
+          <div class="container-content">
+            <h2>COLABORAÇÃO MULTIDISCIPLINAR</h2>
+            <p>
+              O projeto reúne profissionais e estudantes de diferentes áreas, promovendo o intercâmbio de conhecimentos e a atuação integrada em prol da saúde pública.
+            </p>
+          </div>
+        </section>
+        <section id="contato" class="container card" data-info="contato">
+          <div class="container-content">
+            <h2>CONTATO</h2>
+            <p>
+              Entre em contato conosco pelo e-mail: contato@petsaude.com.br ou utilize o formulário abaixo.
+            </p>
+          </div>
+        </section>
+        <!-- O container expansível será inserido via JavaScript -->
+      </div>
     </main>
-
-    <footer>
-      <small> Projeto PET-Saúde &copy; 2025 — Parnaíba-PI </small>
-    </footer>
+    <script src="./scripts/expand-cards.js"></script>
+    <script src="./scripts/menu-mobile.js"></script>
   </body>
 </html>
