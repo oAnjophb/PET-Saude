@@ -39,4 +39,8 @@ Esta landing page apresenta o projeto “Informação para Ação: Desenvolvimen
 - O logotipo é um placeholder, podendo ser substituído facilmente.
 - Possíveis melhorias: adicionar animações leves, imagens ou ícones personalizados, formulário de contato funcional e mais opções de acessibilidade.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> cc39a5e3fa52cc10728b99b3a979018a25da6467
