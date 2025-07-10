@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
   if (menuIcon && navList) {
     menuIcon.addEventListener("click", function(e) {
       navList.classList.toggle("open");
-      // Atualiza aria-expanded para acessibilidade
       const expanded = menuIcon.getAttribute("aria-expanded") === "true";
       menuIcon.setAttribute("aria-expanded", !expanded);
       e.stopPropagation();
     });
 
-    // Fecha o menu se clicar fora
     document.addEventListener("click", function(e) {
       if (!navList.contains(e.target) && !menuIcon.contains(e.target)) {
         navList.classList.remove("open");
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Fecha ao pressionar ESC
     document.addEventListener("keydown", function(e) {
       if (e.key === "Escape") {
         navList.classList.remove("open");

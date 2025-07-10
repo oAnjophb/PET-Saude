@@ -1,0 +1,129 @@
+/* 
+  =============================
+  RESPONSIVIDADE GERAL
+  =============================
+*/
+
+/* Menu mobile e header responsivo */
+@media (max-width: 700px) {
+  .menu-icon {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: auto;
+    z-index: 1001;
+    margin-bottom: 0;
+    padding: 4px 4px;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    background: #161f26ea;
+    position: fixed;
+    top: 70px;
+    left: 16px;
+    right: auto;
+    min-width: 190px;
+    padding: 18px 22px 18px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    z-index: 1000;
+    animation: fadeIn 0.25s;
+    margin: 0;
+  }
+  #nav-list.open {
+    display: flex;
+  }
+  .header-content {
+    padding: 16px 3vw 12px 3vw;
+  }
+  .logo img {
+    height: 120px;
+  }
+  .header-title {
+    font-size: 1.12rem;
+    margin-bottom: 8px;
+    margin-top: 0;
+    padding: 0 4vw;
+    max-width: 98vw;
+  }
+}
+
+/* Animação suave para o menu mobile */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade dos cards, footer e títulos em telas menores */
+@media (max-width: 1000px) {
+  .container-cards-row {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .main-section {
+    padding: 0 2vw;
+  }
+  .central-section h2 {
+    font-size: 1.3rem;
+  }
+  .central-section p {
+    font-size: 1.04rem;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-center {
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+  .footer-left img {
+    height: 22px;
+  }
+  .footer-right img {
+    height: 18px;
+  }
+  .uespi-footer,
+  .footer-center span {
+    font-size: 0.96rem;
+  }
+}
+
+/* Header ainda menor para telas muito pequenas */
+@media (max-width: 500px) {
+  .header-content {
+    padding: 8px 2vw 8px 2vw;
+  }
+  .header-title {
+    font-size: 1rem;
+    padding: 0 2vw;
+  }
+  .logo img {
+    height: 140px;
+  }
+}

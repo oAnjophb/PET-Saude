@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PET - Saúde</title>
-    <!-- Phosphor Icons CDN -->
+    <!-- Importando ícones da biblioteca Phosphor Icons via CDN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Importando o arquivo CSS principal do projeto -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
+    <!-- Cabeçalho principal da página -->
     <header class="header fade-in">
+      <!-- Camada de overlay para efeito visual no header -->
       <div class="header-overlay"></div>
       <div class="header-content">
+        <!-- Logotipo do projeto (imagem pode ser substituída depois) -->
         <div class="logo fade-in">
           <img src="./components/images/Logo1aWhite.png" alt="Logo PET-Saúde" />
         </div>
+        <!-- Título principal do projeto, com descrição resumida -->
         <h1 class="header-title fade-in">
           Informação para Ação: Desenvolvimento e implantação de soluções
           digitais para otimizar a comunicação e gestão da Atenção Primária à
           Saúde
         </h1>
+        <!-- Navegação principal com links para as seções da página -->
         <nav class="nav-container fade-in">
+          <!-- Botão do menu mobile (hamburguer) para navegação responsiva -->
           <button
             class="menu-icon"
             aria-label="Abrir Menu"
@@ -34,6 +42,7 @@
             <span></span>
             <span></span>
           </button>
+          <!-- Lista de navegação com âncoras para seções -->
           <ul id="nav-list">
             <li><a href="#sobre">SOBRE O PROJETO</a></li>
             <li><a href="#problema">PROBLEMA</a></li>
@@ -48,6 +57,7 @@
 
     <main>
       <div class="main-section">
+        <!-- Seção sobre o projeto -->
         <section id="sobre" class="central-section">
           <h2>SOBRE O PROJETO</h2>
           <p>
@@ -57,6 +67,7 @@
             mais eficiente e integrado.
           </p>
         </section>
+        <!-- Seção que apresenta o problema abordado pelo projeto -->
         <section id="problema" class="central-section">
           <h2>PROBLEMA</h2>
           <p>
@@ -66,7 +77,10 @@
             cuidado mais integrado e de qualidade.
           </p>
         </section>
+
+        <!-- Linha de cards interativos para detalhar como o projeto atua, benefícios e colaboração -->
         <div class="container-cards-row">
+          <!-- Card explicando como o projeto atua -->
           <section
             id="como-atuamos"
             class="container card"
@@ -78,6 +92,7 @@
               <p><strong>Clique para ver como atuamos.</strong></p>
             </div>
           </section>
+          <!-- Card com os benefícios do projeto -->
           <section
             id="beneficios"
             class="container card"
@@ -93,6 +108,7 @@
               </p>
             </div>
           </section>
+          <!-- Card sobre a colaboração multidisciplinar -->
           <section
             id="colaboracao"
             class="container card"
@@ -108,19 +124,23 @@
       </div>
     </main>
 
+    <!-- Rodapé com informações institucionais e de contato -->
     <footer class="footer">
       <div class="footer-row">
+        <!-- Lado esquerdo do rodapé com logo da universidade -->
         <div class="footer-left">
           <span class="uespi-footer"
             >UESPI - Universidade Estadual do Piauí</span
           >
           <img src="./components/images/uespi.png" alt="Logo UESPI" />
         </div>
+        <!-- Parte central do rodapé com contato e crédito do projeto -->
         <div class="footer-center">
           <span>Contato: petsaude@contato.uespi.com</span>
           <span>Projeto Pet-Saúde</span>
           <span>Parnaíba-PI &copy; 2025</span>
         </div>
+        <!-- Lado direito do rodapé com logos de parceiros em saúde -->
         <div class="footer-right">
           <img
             src="./components/images/phb.png"
@@ -131,12 +151,14 @@
       </div>
     </footer>
 
-    <!-- Modal de COMO ATUAMOS -->
+    <!-- Modal para mostrar detalhes de 'Como Atuamos' -->
     <div id="como-atuamos-modal" class="modal-overlay" style="display: none">
       <div class="modal-content">
+        <!-- Botão para fechar o modal -->
         <button class="modal-close" aria-label="Fechar">
           <i class="ph ph-x"></i>
         </button>
+        <!-- Tópicos detalhando as ações do projeto -->
         <div class="topico">
           <h3><i class="ph ph-monitor"></i> Plataforma Digital</h3>
           <p>
@@ -168,9 +190,10 @@
       </div>
     </div>
 
-    <!-- Modal de BENEFÍCIOS -->
+    <!-- Modal para mostrar os benefícios do projeto -->
     <div id="beneficios-modal" class="modal-overlay" style="display: none">
       <div class="modal-content">
+        <!-- Botão para fechar o modal -->
         <button class="modal-close" aria-label="Fechar">
           <i class="ph ph-x"></i>
         </button>
@@ -179,6 +202,7 @@
             <i class="ph ph-users-three"></i> Benefícios para a Comunidade
           </h3>
         </div>
+        <!-- Benefício: vigilância em saúde fortalecida -->
         <div class="topico">
           <h4><i class="ph ph-eye"></i> Vigilância fortalecida</h4>
           <p>
@@ -186,6 +210,7 @@
             pública.
           </p>
         </div>
+        <!-- Benefício: prevenção aprimorada -->
         <div class="topico">
           <h4>
             <i class="ph ph-shield-check"></i> Prevenção e controle aprimorados
@@ -195,6 +220,7 @@
             controle de doenças.
           </p>
         </div>
+        <!-- Benefício: democratização do conhecimento -->
         <div class="topico">
           <h4>
             <i class="ph ph-book-open"></i> Democratização do conhecimento
@@ -204,6 +230,7 @@
             educação em saúde.
           </p>
         </div>
+        <!-- Benefício: apoio ao profissional de saúde -->
         <div class="topico">
           <h4><i class="ph ph-stethoscope"></i> Apoio aos profissionais</h4>
           <p>
@@ -213,9 +240,10 @@
       </div>
     </div>
 
-    <!-- Modal de COLABORAÇÃO MULTIDISCIPLINAR -->
+    <!-- Modal para mostrar os cursos envolvidos na colaboração multidisciplinar -->
     <div id="colaboracao-modal" class="modal-overlay" style="display: none">
       <div class="modal-content">
+        <!-- Botão para fechar o modal -->
         <button class="modal-close" aria-label="Fechar">
           <i class="ph ph-x"></i>
         </button>
@@ -242,6 +270,7 @@
       </div>
     </div>
 
+    <!-- Inclusão dos scripts JavaScript responsáveis pela interatividade da página -->
     <script src="./scripts/menu-mobile.js"></script>
     <script src="./scripts/como-atuamos.js"></script>
     <script src="./scripts/beneficios.js"></script>
