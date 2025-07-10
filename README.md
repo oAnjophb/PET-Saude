@@ -33,5 +33,3 @@ Esta landing page apresenta o projeto “Informação para Ação: Desenvolvimen
 - Possíveis melhorias: adicionar animações leves, imagens ou ícones personalizados, formulário de contato funcional e mais opções de acessibilidade.
 
 ---
-
-> Qualquer dúvida ou sugestão, estou à disposição!
