@@ -1,11 +1,11 @@
 /* 
   =============================
-  RESPONSIVIDADE GERAL
+  RESPONSIVIDADE GERAL - Mobile e Tablet
   =============================
 */
 
-/* Menu mobile e header responsivo */
-@media (max-width: 700px) {
+/* Menu mobile/tablet e header responsivo */
+@media (max-width: 1024px) {
   .menu-icon {
     display: flex;
     position: fixed;
@@ -44,7 +44,7 @@
     padding: 16px 3vw 12px 3vw;
   }
   .logo img {
-    height: 120px;
+    height: 100px;
   }
   .header-title {
     font-size: 1.12rem;
@@ -53,22 +53,19 @@
     padding: 0 4vw;
     max-width: 98vw;
   }
-}
 
-/* Animação suave para o menu mobile */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  /* Alinhamento dos itens do menu mobile/tablet */
+  #nav-list li,
+  #nav-list li a {
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
   }
 }
 
 /* Responsividade dos cards, footer e títulos em telas menores */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .container-cards-row {
     flex-direction: column;
     gap: 1.2rem;
@@ -102,8 +99,24 @@
     align-items: center;
     margin: 10px 0 10px 0;
   }
+  .footer-left {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    order: -1;
+    gap: 6px;
+  }
   .footer-left img {
-    height: 22px;
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    order: -1;
+  }
+  .uespi-footer {
+    text-align: center;
+    width: 100%;
   }
   .footer-right img {
     height: 18px;
@@ -114,8 +127,7 @@
   }
 }
 
-/* Header ainda menor para telas muito pequenas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header-content {
     padding: 8px 2vw 8px 2vw;
   }
@@ -124,6 +136,6 @@
     padding: 0 2vw;
   }
   .logo img {
-    height: 140px;
+    height: 80px;
   }
 }
