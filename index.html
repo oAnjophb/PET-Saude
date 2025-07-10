@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PET - Saúde</title>
+    <!-- Phosphor Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -30,7 +35,7 @@
             <span></span>
           </button>
           <ul id="nav-list">
-            <li><a href="#sobre">SOBRE NÓS</a></li>
+            <li><a href="#sobre">SOBRE O PROJETO</a></li>
             <li><a href="#problema">PROBLEMA</a></li>
             <li><a href="#como-atuamos">COMO ATUAMOS</a></li>
             <li><a href="#beneficios">BENEFÍCIOS</a></li>
@@ -42,93 +47,64 @@
     </header>
 
     <main>
-      <div class="container-grid" id="containerGrid">
-        <section id="sobre" class="container card" data-info="sobre">
-          <div class="container-content">
-            <h2>SOBRE O PROJETO</h2>
-            <p>
-              Auxiliamos a comunicação entre as Unidades Básicas de Saúde e a
-              população de Parnaíba-PI, gerenciando dados gerados nos
-              atendimentos do SUS e otimizando a análise da situação de saúde
-              para um cuidado mais eficiente e integrado.
-            </p>
-          </div>
+      <div class="main-section">
+        <section id="sobre" class="central-section">
+          <h2>SOBRE O PROJETO</h2>
+          <p>
+            Auxiliamos a comunicação entre as Unidades Básicas de Saúde e a
+            população de Parnaíba-PI, gerenciando dados gerados nos atendimentos
+            do SUS e otimizando a análise da situação de saúde para um cuidado
+            mais eficiente e integrado.
+          </p>
         </section>
-        <section id="problema" class="container card" data-info="problema">
-          <div class="container-content">
-            <h2>PROBLEMA</h2>
-            <p>
-              A fragmentação das informações em saúde e a comunicação
-              ineficiente dificultam o acompanhamento dos indicadores e a tomada
-              de decisão na Atenção Primária. É preciso superar esses desafios
-              para garantir um cuidado mais integrado e de qualidade.
-            </p>
-          </div>
+        <section id="problema" class="central-section">
+          <h2>PROBLEMA</h2>
+          <p>
+            A fragmentação das informações em saúde e a comunicação ineficiente
+            dificultam o acompanhamento dos indicadores e a tomada de decisão na
+            Atenção Primária. É preciso superar esses desafios para garantir um
+            cuidado mais integrado e de qualidade.
+          </p>
         </section>
-        <!-- Container expansível dos tópicos detalhados -->
-        <div
-          id="como-atuamos-modal"
-          class="modal-overlay"
-          style="display: none"
-        >
-          <div class="modal-content">
-            <button class="modal-close" aria-label="Fechar">&times;</button>
-            <div class="topico">
-              <h3>Plataforma Digital</h3>
+        <div class="container-cards-row">
+          <section
+            id="como-atuamos"
+            class="container card"
+            data-info="como-atuamos"
+            tabindex="0"
+          >
+            <div class="container-content">
+              <h2>COMO ATUAMOS</h2>
+              <p><strong>Clique para ver como atuamos.</strong></p>
+            </div>
+          </section>
+          <section
+            id="beneficios"
+            class="container card"
+            data-info="beneficios"
+            tabindex="0"
+          >
+            <div class="container-content">
+              <h2>BENEFÍCIOS</h2>
               <p>
-                Desenvolvimento e implementação de soluções web para UBS e
-                gestores de saúde.
+                <strong
+                  >Clique para ver os benefícios para a comunidade.</strong
+                >
               </p>
             </div>
-            <div class="topico">
-              <h3>Integração de Dados</h3>
-              <p>
-                Unificação de informações de notificações (SINAN), doenças
-                crônicas (e-SUS), situação vacinal e atendimentos da APS.
-              </p>
+          </section>
+          <section
+            id="colaboracao"
+            class="container card"
+            data-info="colaboracao"
+            tabindex="0"
+          >
+            <div class="container-content">
+              <h2>COLABORAÇÃO MULTIDISCIPLINAR</h2>
+              <p><strong>Clique para ver os cursos participantes!</strong></p>
             </div>
-            <div class="topico">
-              <h3>Dashboards Interativos</h3>
-              <p>
-                Visualização de indicadores-chave, gráficos dinâmicos e mapas
-                para apoiar decisões.
-              </p>
-            </div>
-            <div class="topico">
-              <h3>Educação em Saúde</h3>
-              <p>
-                Materiais digitais educativos e ações de educação para
-                profissionais e comunidade.
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
-        <!-- Fim do container expansível -->
-
-        <section id="beneficios" class="container card" data-info="beneficios">
-          <div class="container-content">
-            <h2>BENEFÍCIOS</h2>
-            <p>
-              Melhoria na comunicação, otimização da gestão de dados, suporte à
-              decisão clínica, maior engajamento da população e resultados
-              positivos na saúde local.
-            </p>
-          </div>
-        </section>
-        <section
-          id="colaboracao"
-          class="container card"
-          data-info="colaboracao"
-        >
-          <div class="container-content">
-            <h2>COLABORAÇÃO MULTIDISCIPLINAR</h2>
-            <p>
-              O projeto reúne profissionais e estudantes de diferentes áreas,
-              promovendo o intercâmbio de conhecimentos e a atuação integrada em
-              prol da saúde pública.
-            </p>
-          </div>
-        </section>
       </div>
     </main>
 
@@ -155,8 +131,120 @@
       </div>
     </footer>
 
-    <script src="./scripts/expand-cards.js"></script>
+    <!-- Modal de COMO ATUAMOS -->
+    <div id="como-atuamos-modal" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar">
+          <i class="ph ph-x"></i>
+        </button>
+        <div class="topico">
+          <h3><i class="ph ph-monitor"></i> Plataforma Digital</h3>
+          <p>
+            Desenvolvimento e implementação de soluções web para UBS e gestores
+            de saúde.
+          </p>
+        </div>
+        <div class="topico">
+          <h3><i class="ph ph-database"></i> Integração de Dados</h3>
+          <p>
+            Unificação de informações de notificações (SINAN), doenças crônicas
+            (e-SUS), situação vacinal e atendimentos da APS.
+          </p>
+        </div>
+        <div class="topico">
+          <h3><i class="ph ph-chart-bar"></i> Dashboards Interativos</h3>
+          <p>
+            Visualização de indicadores-chave, gráficos dinâmicos e mapas para
+            apoiar decisões.
+          </p>
+        </div>
+        <div class="topico">
+          <h3><i class="ph ph-book-open"></i> Educação em Saúde</h3>
+          <p>
+            Materiais digitais educativos e ações de educação para profissionais
+            e comunidade.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de BENEFÍCIOS -->
+    <div id="beneficios-modal" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar">
+          <i class="ph ph-x"></i>
+        </button>
+        <div class="topico">
+          <h3>
+            <i class="ph ph-users-three"></i> Benefícios para a Comunidade
+          </h3>
+        </div>
+        <div class="topico">
+          <h4><i class="ph ph-eye"></i> Vigilância fortalecida</h4>
+          <p>
+            Monitoramento ampliado e resposta mais ágil a problemas de saúde
+            pública.
+          </p>
+        </div>
+        <div class="topico">
+          <h4>
+            <i class="ph ph-shield-check"></i> Prevenção e controle aprimorados
+          </h4>
+          <p>
+            Dados integrados para estratégias mais eficazes na prevenção e
+            controle de doenças.
+          </p>
+        </div>
+        <div class="topico">
+          <h4>
+            <i class="ph ph-book-open"></i> Democratização do conhecimento
+          </h4>
+          <p>
+            Informação acessível a profissionais e população, promovendo
+            educação em saúde.
+          </p>
+        </div>
+        <div class="topico">
+          <h4><i class="ph ph-stethoscope"></i> Apoio aos profissionais</h4>
+          <p>
+            Ferramentas digitais para decisões mais rápidas e seguras no SUS.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de COLABORAÇÃO MULTIDISCIPLINAR -->
+    <div id="colaboracao-modal" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar">
+          <i class="ph ph-x"></i>
+        </button>
+        <div class="topico">
+          <h3><i class="ph ph-users-four"></i> Cursos Envolvidos</h3>
+          <p>
+            O projeto reúne profissionais e estudantes de diferentes áreas,
+            promovendo o intercâmbio de conhecimentos e a atuação integrada em
+            prol da saúde pública.
+          </p>
+          <p>
+            O projeto reúne cursos de graduação da Universidade Estadual do
+            Piauí (UESPI):
+          </p>
+          <ul>
+            <li><i class="ph ph-stethoscope"></i> Bacharelado em Enfermagem</li>
+            <li><i class="ph ph-tooth"></i> Bacharelado em Odontologia</li>
+            <li>
+              <i class="ph ph-device-mobile"></i> Curso Superior de Tecnologia
+              em Sistemas de Computação
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./scripts/menu-mobile.js"></script>
     <script src="./scripts/como-atuamos.js"></script>
+    <script src="./scripts/beneficios.js"></script>
+    <script src="./scripts/colaboracao.js"></script>
   </body>
 </html>

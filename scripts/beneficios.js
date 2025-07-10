@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const card = document.getElementById('como-atuamos');
-  const modal = document.getElementById('como-atuamos-modal');
+  const card = document.getElementById('beneficios');
+  const modal = document.getElementById('beneficios-modal');
   const closeBtn = modal.querySelector('.modal-close');
 
   function openModal(e) {
